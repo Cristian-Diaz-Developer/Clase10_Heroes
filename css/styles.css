@@ -1,74 +1,160 @@
-*{
+/*Mobile*/
+@font-face{
+    src: url('../Fonts/Roboto/Roboto-Light.ttf');
+    font-family: 'Roboto';
+}
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
-.descuento{
-    background-color: #1CD1B0;
-    font-size: 15px ;
-    font-family: 'Roboto', sans-serif;
-    padding:10px ;
+h2.discount {
+    background-color:#D1891C;
+    font-size: 1rem;
+    font-family: 'Roboto';
+    padding: 10px;
+    margin: 0;
 }
-.titulo{
+h1.title {
     background-color: #00669F;
-    font-size: 40px ;
-    font-family: 'Roboto', sans-serif;
-    padding: 28px;
+    color: #FFFFFF;
+    font-size: 2.5rem;
+    font-family: 'Roboto';
+    padding: 20px;
+    margin: 0;
 }
-section{
-    margin-top: 293px;
-    margin-bottom: 208px;
+section.main {
+    margin: 0 auto;
     display: flex;
-    padding-left: 30px;
-    margin-right: auto;
-    margin-left: auto;
-}
-.caja{
-    width: 300px;
-    height: 529px;    
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-.corazon{
-    position: absolute;
-    padding-top: 15.88px;
-    padding-left: 21px;
-}
-.profile-picture{
+    flex-direction: column;
     position: relative;
-    top: -70px;
-    left: 90px;
-    border-radius:50% ;
+    align-items: center;
 }
-.hero-name{
-    font-family: 'Roboto', sans-serif;
-    font-size: 30px;
-    text-transform: uppercase;
+section.main div.container {
+    width: 300px;
+    height: auto;
+    padding: 10px;
+    margin: 10px 10px 50px;
+}
+section.main div.container div.imgs{
+    position: relative;
+}
+section.main div.container div.imgs img.heart {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+section.main div.container div.imgs img.house {
+    width: 300px;
+    height: 193px;
+    border-radius: 20px 20px 0 0;
+} 
+section.main div.container div.imgs img.heroe {
+    position: absolute;
+    bottom: -25%;
+    left: 25%;
+    border-radius: 50%;
+    width: 120px;
+    height: 118px;
+} 
+
+section.main div.container div.text  {
+    display: flex;
+    flex-direction: column;
+    background: #F3F3F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 15% 20px 5%;
+}
+section.main div.container div.text h3{
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 1.875rem;
+    line-height: 2.188rem;
     text-align: center;
-    margin-top: -50px;
+    margin: 10px;
+
 }
-.movie-description{
-    margin-top: 10px;
-    font-family: 'Roboto', sans-serif;
-    padding-left: 16px; 
-    padding-right: 14px;
+section.main div.container div.text p{
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.125;
+    margin: 0 0 30px;
 }
-.see-more{
+section.main div.container div.text button{
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 0.938rem;
+    line-height: 1.063rem;
     background-color: #00669F;
-    color: #fff;
-    font-size: 15px;
-    font-family: 'Roboto', sans-serif;
-    margin-top: 37px;
-    width: 128.78px;
-    height: 48.52px;
-    margin-left: 85px;
-    
-    
+    color: #FFFFFF;
+    padding: 15px;
+    width: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #00669F;
 }
-footer{
-    background-color: #00669F;
-    color: #fff;
-    font-family: 'Roboto', sans-serif;
+footer {
+    display: flex;
+    background: #00669F;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
     padding: 16px;
+    text-align: center;
+    justify-content: center;
+}
+footer .p{
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 3em;
+    text-align: center;
+}
+.git{    
+    width: auto;
+    height: 60px;
+    padding-left: 100px;
+}
+
+@media (min-width: 768px) {
+    /*Tablet*/
+    section.main {
+        align-items: initial;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+    section.main div.container {
+        width: 300px;
+        height: 193px;
+        padding: 10px;
+        margin: 10px 10px 400px;
+    } 
+    footer {
+    height: 50px;
+    }
+    footer .git{
+    margin-left: auto;
+    height: 40px;
+    }
+}
+@media (min-width: 1440px) {
+    /*Desktop*/
+    section.main {
+    margin: 0 auto 100px;
+    }
+    section.main div.container {
+        width: 300px;
+        height: 193px;
+        padding: 10px;
+        margin: 10px 10px 304px;
+    } 
+    footer {
+        position: relative;
+        height: 50px;
+    }
+    .git{
+        margin-left: auto;
+        width: auto;
+        height: 50px;
+    }
 }
