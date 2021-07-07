@@ -102,11 +102,11 @@ footer {
     text-align: center;
     justify-content: center;
 }
-footer .p{
+.parrafo-footer{
+    align-self: center;
     font-family: Roboto;
     font-weight: 400;
-    font-size: 3em;
-    text-align: center;
+    font-size: 1.5em;
 }
 .git{    
     width: auto;
